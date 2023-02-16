@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <p></p>
+      <!-- separar -->
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <p>
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" required tabindex="1" /> 
+
+          <label for="apellidos"> Apellidos:</label>
+          <input type="text" name="apellidos" tabindex="2" /> 
+          <label for="apellidos 2"> Apellidos 2:</label>
+          <input type="text" name="apellidos 2" disabled /> <br /><br />
+
+          <label for="nombre">Lugar de nacimiento</label>
+          <select name="provincia">
+            <optgroup label="Andalucia">
+              <option value="S">Sevilla</option>
+              <option>Málaga</option>
+              <option selected>Córdoba</option>
+            </optgroup>
+
+            <optgroup label="Aragon">
+              <option value="Z">Zaragoza</option>
+              <option selected>Huesca</option>
+              <option>Teruel</option>
+            </optgroup>
+          </select>
+        </p>
+
+        <p>
+          <label for="genero">Sexo</label><br />
+          <input type="radio" name="genero" value="masculino" /> Hombre <br />
+          <input type="radio" name="genero" value="fememino" /> Mujer <br />
+          <input type="radio" name="genero" value="otro" /> Otro <br />
+        </p>
+
+        <p>
+          <label for="estudios">Estudios</label><br />
+          <input type="checkbox" name="estudios" value="P" checked /> Primarios
+          <br />
+          <input type="checkbox" name="estudios" value="S" /> Secundarios <br />
+          <input type="checkbox" name="estudios" value="U" /> Universitarios
+          <br />
+          <br />
+          <label for="dispositivos">Dispositivos electrónicos</label><br />
+          <input type="checkbox" name="dispositivos" value="pc" /> PC <br />
+          <input type="checkbox" name="dispositivos" value="table" /> Tableta
+          <br />
+          <input type="checkbox" name="dispositivos" value="movil" /> Móvil
+          <br />
+        </p>
+      </fieldset>
+
+      <p></p>
+      <!-- separar -->
+
+      <fieldset>
+        <legend>Inicio de Sesión</legend>
+        <p>
+          <label for="login">Login:</label>
+          <input type="text" name="login" required />
+          <label for="pass">Contraseña:</label>
+          <input type="password" name="pass" required />
+        </p>
+      </fieldset>
+
+      <p>
+        <label for="editores">Editores</label><br />
+        <input list="editor" />
+        <datalist id="editor">
+          <option value="Atom"></option>
+          <option value="JavaScript"></option>
+          <option value="NotePad++"></option>
+          <option value="VsCode"></option>
+          <option value="Java"></option>
+          <option value="Sublime"></option>
+          <option value="Brackets"></option>
+        </datalist>
+      </p>
+
+      <p>
+        <textarea cols="30" rows="10" tabindex="3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptate corrupti ut
+            earum, aliquam sint amet repellendus, vitae placeat repellat quis, ipsa qui. Velit placeat
+            reiciendis tempore autem nostrum eaque?
+        </textarea>
+      </p>
+
+      <button type="submit">Aceptar</button>
+    </form>
+  </body>
+</html>

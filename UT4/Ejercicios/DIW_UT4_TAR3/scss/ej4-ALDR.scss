@@ -1,0 +1,10 @@
+$listaDeListas: (puma,black,default),(sea-slug,blue,pointer); // son string o cadenas de la lista
+
+@each $list in $listaDeListas {
+    .#{nth($list, 1)}-icon {
+        background-image: url('/images/#{nth($list, 1)}.png');
+        border: 2px solid #{nth($list, 2)};
+        cursor: #{nth($list, 3)};
+     }
+    
+}

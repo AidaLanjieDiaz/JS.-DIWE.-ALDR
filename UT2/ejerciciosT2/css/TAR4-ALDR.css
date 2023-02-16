@@ -1,0 +1,43 @@
+body {
+    background: gray;
+}
+
+#first {
+    background: red;
+    width: 50%;
+}
+
+#first img {
+    width: 50%;
+    
+}
+
+#second {
+    background: blue;
+    width: 30%;
+}
+
+#second img {
+    width: 100%;
+}
+
+#first, #second {
+    border-top: 10px solid green;
+    border-bottom: 10px dashed orange;
+    margin: 50px;
+    padding: 20px;
+}
+
+span {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    text-indent: 250px;
+}
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio, Video y más </title>
+  </head>
+
+  <body>
+    <!-- Etiqueta de audio-->
+    <audio controls>
+      <source src="multimedia/Frase_de_Neil_Armstrong.mp3" type="audio/mp3" />
+      <source src="multimedia/Frase_de_Neil_Armstrong.ogg" type="audio/ogg" />
+      Tu navegador no soporta esta etiqueta (audio)
+      <!--Tu servidor web tiene que estar debidamente configurado-->
+      <track
+        src="multimedia_files/Frase_de_Neil_Armstrong_es.vtt"
+        kind="subtitles"
+        srclang="es"
+        label="Español"
+        type="text/vtt"
+      />
+      <track
+        src="multimedia_files/Frase_de_Neil_Armstrong_en.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="English"
+        type="text/vtt"
+      />
+    </audio>
+
+    <!-- Etiqueta de vídeo-->
+    <video width="320" height="240" controls>
+      <source src="multimedia_files/Zeppelin_Explodes.webm" type="video/webm" />
+      Tu navegador no soporta esta etiqueta (video)
+    </video>
+
+    <!-- Progreso -->
+    <progress max="100" value="50"></progress>
+    <progress></progress>
+    <br />
+
+    <!-- Etiqueta iFrame -->
+    <iframe src="http://www.as.com" height="800px" width="800px"></iframe>
+
+    <!-- Documentos externos -->
+    <object
+      type="application/pdf"
+      data="multimedia/1.HTML5.pdf"
+      width="1000"
+      height="800"
+    >
+      No se ha podido abrir el documento.
+    </object>
+    <object data="pelicula.mpeg" type="application/mpeg" />
+  </body>
+</html>

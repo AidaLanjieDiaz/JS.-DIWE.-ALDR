@@ -1,0 +1,67 @@
+caption {
+    text-align: center;
+}
+
+a:link {
+    color: green;
+    text-decoration: none;
+}
+a:visited {
+    color: red;
+    text-decoration: none;
+   
+}
+
+table,td , th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+
+}
+
+td, th {
+    border-bottom: 1px solid black;
+}
+
+tr:first-of-type th::first-letter {
+    font-size: 2em;
+    color: black;
+}
+
+tr td:first-of-type {
+    background-color: green;
+}
+
+tr:nth-of-type(4) th:last-of-type {
+    background-color: yellow;
+}
+
+/* Para agrandar al pasar por encima */
+tr:first-of-type th:last-of-type:hover {
+    font-size: 30px;
+}
+
+tr td:last-of-type:hover {
+    font-size: 30px;
+}
+
+tr:nth-of-type(4) th:only-of-type:hover {
+    font-size: 30px;
+}
+
+/* Para que no se agrande también el tiempo del recreo */
+tr:nth-of-type(4) td:only-of-type{
+    font-size: 15px;
+}
+
+input:required {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+label::after {
+    color: red;
+    content: "*";
+}

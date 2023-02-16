@@ -1,0 +1,13 @@
+$tamaño-fuente: 2em, 1.5em, 1.2em, 1em, 0.5em, 0.2em;
+$color-list: #0f0, #00f, orange, #ccc, #f00, pink;
+$fuentes: 'Courier New','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+@for $i from 1 to 7 {
+    h#{$i} {
+      font-size: nth($tamaño-fuente, $i);
+      background-color: nth($color-list, $i);
+      font-family: nth($fuentes, $i);
+    }
+}
+
+  

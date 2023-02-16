@@ -1,0 +1,15 @@
+@mixin important-text {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+}
+
+@mixin specialText($color) {
+    @include important-text;
+    background-color: $color;
+}
+
+.danger {
+    @include specialText(green);
+}

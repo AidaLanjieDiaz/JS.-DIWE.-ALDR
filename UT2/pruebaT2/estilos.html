@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estilos</title>
+
+   <!-- Etiqueta Style --> <!-- 2º PREFERENCIA -->
+    <style>
+        h2 {
+        color: green;
+        }
+    </style>
+
+<!-- Directiva @Import -->
+<style>
+    @import 'css/import.css';
+</style>
+
+<!-- Etiqueta Link (más recomendado) --> <!-- 3º PREFERENCIA -->
+<link href="css/estilos.css" type="text/css" rel="stylesheet" /> <!-- PREFERENCIA DEL ÚLTIMO HACIA ARRIBA -->
+
+  </head>
+  <body>
+    <!-- Estilos In-line --> <!-- 1º PREFERENCIA -->
+    <h1 style="color:red">Hola</h1>
+    <h2><u>Hola</u></h2>
+    <h3>Hola</h3>
+    <h4><i>Hola</i></h4>
+    <h5>Hola</h5>
+    <h6>Hola</h6>
+
+    
+  </body>
+
+
+</html>

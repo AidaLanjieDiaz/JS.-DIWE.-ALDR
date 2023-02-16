@@ -1,0 +1,17 @@
+/* TODO LO QUE SEA DE BOOTSTRAP ARRIBA DEL IMPORT PARA QUE LO COMPILE, 
+PROPIO CODGIO PERSONALIZADO ABAJO DE LOS IMPORT */
+
+/* $body-bg: rgb(11, 201, 0);
+$body-color: rgb(249, 249, 249); */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+// font-family: 'Dancing Script', cursive;
+$danger: peru;
+$font-family-base: 'Dancing Script', cursive;
+
+@import "../bootstrap/scss/bootstrap.scss";
+
+p {
+    color: $pink-600;
+    background-color: #555;
+    }

@@ -1,0 +1,14 @@
+@mixin transformar ($propiedad) {
+    -webkit-transfrom: #{$propiedad};
+    -ms-transform: #{$propiedad};
+    transform: #{$propiedad};
+}
+
+.escalada {
+    @include transformar("scale(2, 3)");
+}
+
+h1 {
+    color: blue;
+    @include transformar("rotate(22deg)");
+}

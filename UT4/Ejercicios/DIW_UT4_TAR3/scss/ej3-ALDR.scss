@@ -1,0 +1,9 @@
+$num: 1;
+$tamaño-list: 20%, 50%, 30%;
+
+@while $num < 4 {
+    .bloque#{$num} {
+      width: nth($tamaño-list, $num);
+    }
+    $num: $num + 1;
+  }

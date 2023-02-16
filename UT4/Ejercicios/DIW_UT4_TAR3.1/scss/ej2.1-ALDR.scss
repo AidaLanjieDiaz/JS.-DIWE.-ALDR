@@ -1,0 +1,20 @@
+@mixin encabezados ($tamh1) {
+    
+    @for $i from 1 to 4 {
+        h#{$i} {
+          font-size: $tamh1;
+        }
+        $tamh1: $tamh1 - 0.2;
+      }
+
+}
+
+@include encabezados(1.5em);
+
+@media (min-width: 800px) {
+    @include encabezados(2em);
+}
+
+@media (min-width: 1200px) {
+    @include encabezados(2.5em);
+}

@@ -1,0 +1,69 @@
+
+a:link {
+    color:rgb(247, 0, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(246, 160, 1);
+}
+
+a:visited {
+    color: rgb(23, 215, 249);
+    text-decoration: underline;
+}
+
+li:first-child {
+    background-color: gray;
+}
+
+li:last-child {
+    background-color: aquamarine;
+}
+
+ul:first-of-type li:last-child { /* el primer ul el ultimo hijo */
+    background-color: blueviolet;
+    color: white;
+}
+
+ul:first-of-type li:first-child { /* el primer ul el ultimo hijo */
+    background-color: rgb(199, 166, 230);
+    color: white;
+}
+
+ul:last-of-type li:last-child { /* el ultimo ul el ultimo hijo */
+    background-color: rgb(226, 43, 183);
+    color: white;
+}
+
+ul:last-of-type li:first-child { /* el ultimo ul el primer hijo */
+    background-color: rgb(238, 132, 3);
+    color: white;
+}
+
+/* pares primer hijo */
+/* ul:nth-of-type(2n) li:first-child { 
+    background-color: rgb(3, 238, 11);
+    color: white; 
+} */ 
+
+/* impares ultimo hijo */
+/* ul:nth-of-type(2n+1) li:last-child { 
+    background-color: rgb(238, 3, 3);
+    color: white; 
+}  */
+
+p::first-letter {
+    font-size: 2em;
+    color:red
+}
+
+p::first-line {
+    font-size: 1.2em;
+    color: rgb(184, 130, 235);
+}
+
+p::before {
+    content: "Este es el inicio del texto";
+    border: 1px solid green;
+}

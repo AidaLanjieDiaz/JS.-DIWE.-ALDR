@@ -1,0 +1,35 @@
+h1 {
+  font-size: 2em;
+  background-color: #0f0;
+  font-family: "Courier New";
+}
+
+h2 {
+  font-size: 1.5em;
+  background-color: #00f;
+  font-family: Courier;
+}
+
+h3 {
+  font-size: 1.2em;
+  background-color: orange;
+  font-family: monospace;
+}
+
+h4 {
+  font-size: 1em;
+  background-color: #ccc;
+  font-family: "Franklin Gothic Medium";
+}
+
+h5 {
+  font-size: 0.5em;
+  background-color: #f00;
+  font-family: "Arial Narrow";
+}
+
+h6 {
+  font-size: 0.2em;
+  background-color: pink;
+  font-family: Arial;
+}/*# sourceMappingURL=ej5-ALDR.css.map */

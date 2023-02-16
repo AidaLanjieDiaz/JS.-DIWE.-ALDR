@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UT2.Tarea 2 - Ejercicio 1</title>
+</head>
+
+<body>
+  <!--  Enunciados -->
+  <h3>
+    <p>
+      <b>
+        Ejercicio 1.- Crear un formulario para registrar un nuevo cliente en
+        un sitio web, solicitando datos personales necesarios, así como la
+        creación de una clave de acceso (password).
+      </b>
+    </p>
+  </h3>
+
+  <!-- Ejercicios -->
+  <form action="https://www.google.com/" method="post">
+    <fieldset>
+      <legend>
+        <h1>Registro de Usuario</h1>
+      </legend>
+
+      <fieldset>
+        <legend>
+          <h2>Datos Personales</h2>
+        </legend>
+        <p>
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" required tabindex="1" />
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" name="apellidos" required tabindex="2" />
+        </p>
+
+        <p>
+          <label for="dni">DNI:</label>
+          <input type="text" name="dni" required tabindex="3" maxlength="9" placeholder="8 numeros y 1 letra"/>
+        </p>
+
+        <p>
+          <label for="genero">Sexo</label><br />
+          <input type="radio" name="genero" value="masculino" /> Hombre <br />
+          <input type="radio" name="genero" value="fememino" /> Mujer <br />
+          <input type="radio" name="genero" value="otro" /> Otro <br />
+        </p>
+
+        <p>
+          <label for="tlf">Teléfono:</label>
+          <input type="tel" name="tlf" maxlength="9" placeholder="Telefono Personal"/>
+          <input type="tel" name="tlf" maxlength="9" placeholder="Telefono"/>
+        </p>
+        <br>
+
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" name="email" required/>
+        </p>
+        <p>
+          <label for="pass">Contraseña:</label>
+          <input type="password" name="pass" required />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <h2>Domicilio</h2>
+        </legend>
+        <p>
+          <label for="direccion">Dirección:</label>
+          <input type="text" name="direccion" required tabindex="4" />
+        </p>
+
+        <p>
+          <label for="Ciudad">Ciudad</label>
+          <select name="provincia">
+            <optgroup label="Andalucia">
+              <option value="S" selected>Sevilla</option>
+              <option value="M">Málaga</option>
+              <option value="C">Córdoba</option>
+            </optgroup>
+
+            <optgroup label="Aragon">
+              <option value="Z">Zaragoza</option>
+              <option>Huesca</option>
+              <option>Teruel</option>
+            </optgroup>
+          </select>
+
+          <label for="pais">Pais</label>
+          <select name="pais">
+            <option value="M">Mexico</option>
+            <option value="S" selected>Spain</option>
+            <option value="I">Italia</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="codigo postal">Código Postal:</label>
+          <input type="text" name="codigo postal" required tabindex="5" maxlength="5" />
+        </p>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <h2>Datos de nacimiento</h2>
+        </legend>
+        <p>
+          <label for="Ciudad">Ciudad</label>
+          <select name="provincia">
+            <optgroup label="Andalucia">
+              <option value="S" selected>Sevilla</option>
+              <option value="M">Málaga</option>
+              <option value="C">Córdoba</option>
+            </optgroup>
+
+            <optgroup label="Aragon">
+              <option value="Z">Zaragoza</option>
+              <option value="H">Huesca</option>
+              <option value="T">Teruel</option>
+            </optgroup>
+          </select>
+
+          <label for="pais">Pais</label>
+            <input list="paises" />
+            <datalist id="paises">
+              <option value="Mexico"></option>
+              <option value="Spain"></option>
+              <option value="Italia"></option>
+              <option value="Suiza"></option>
+              <option value="Rusia"></option>
+              <option value="China"></option>
+              <option value="Suecia"></option>
+            </datalist>
+        </p>
+
+        <p>
+          <label for="cumple">Fecha de cumpleaños:</label>
+          <input type="date" name="cumple" required />
+        </p>
+
+
+
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <h2>Datos Extras</h2>
+        </legend>
+        <p>
+          <label for="estudios">Estudios</label><br />
+          <input type="checkbox" name="estudios" value="P" checked /> Primarios
+          <br />
+          <input type="checkbox" name="estudios" value="S" /> Secundarios <br />
+          <input type="checkbox" name="estudios" value="U" /> Universitarios <br />
+          <input type="checkbox" name="estudios" value="C" /> Ciclo
+          
+        </p>
+
+        <p>
+          <label for="descripcion">Breve descripción:</label><br>
+          <textarea cols="50" rows="5" tabindex="3">
+                Descripción...
+            </textarea>
+        </p>
+      </fieldset>
+
+      
+<center>
+  <p><button type="submit"><h3>Registrar</h3></button></p>
+</center>
+      
+    </fieldset>
+  </form>
+</body>
+
+</html>

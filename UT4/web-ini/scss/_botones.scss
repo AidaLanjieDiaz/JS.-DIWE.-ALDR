@@ -1,0 +1,34 @@
+//Elemento botón general
+$color: white;
+$color-mapa: black;
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+
+  &:hover {
+    box-shadow: 0.5rem 0.5rem #888;
+  }
+
+  &:active {
+    color: $color;
+  }
+
+}
+
+@import "colores";
+@import "mixins";
+$mapa: (
+  normal: $color-normal,
+  warning: $color-warning,
+  accepted: $color-accepted,
+  error: $color-error
+  );
+
+@each $c, $v in $mapa {
+  .btn-#{$c} {
+    @include gradient-x($color-base, #{$v});
+  }
+}

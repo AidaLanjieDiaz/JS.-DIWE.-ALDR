@@ -1,0 +1,146 @@
+@charset "UTF-8";
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.btn:hover {
+  box-shadow: 0.5rem 0.5rem #888;
+}
+.btn:active {
+  color: white;
+}
+
+.btn-normal {
+  background-image: linear-gradient(to bottom, #333333 70%, rgb(0, 110, 255) 100%);
+}
+
+.btn-warning {
+  background-image: linear-gradient(to bottom, #333333 70%, rgb(239, 241, 120) 100%);
+}
+
+.btn-accepted {
+  background-image: linear-gradient(to bottom, #333333 70%, rgb(55, 138, 0) 100%);
+}
+
+.btn-error {
+  background-image: linear-gradient(to bottom, #333333 70%, #ff0000 100%);
+}
+
+/*Usando anidamiento crear la hoja de estilos para un menú */
+nav {
+  background-color: #9b6f91;
+  padding: 0.2rem;
+}
+nav ul li {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+nav ul li.active {
+  color: #FFFFFF;
+  font-weight: bolder;
+}
+nav ul li:hover {
+  color: #FFFFFF;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+/*Estilos para el contenedor general de mi página*/
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+figure.card {
+  border: 0.1rem solid #333333;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 1rem;
+}
+figure.card img {
+  border-radius: 2rem;
+  width: 100%;
+}
+figure.card img:hover {
+  transition: linear 30;
+  transform: rotate 10800 deg;
+}
+figure.card figcaption {
+  font-size: 0.8rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+/* @import "funciones";
+@import "tablas"; */
+/*Estilos para el contenedor general de mi página*/
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row { /* OLD - iOS 6-, Safari 3.1-6, BB7 */ /* TWEENER - IE 10 */ /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  flex-direction: row;
+}
+
+.row > .col-1 {
+  width: anchura_col(1)%;
+}
+
+.row > .col-2 {
+  width: anchura_col(2)%;
+}
+
+.row > .col-3 {
+  width: anchura_col(3)%;
+}
+
+.row > .col-4 {
+  width: anchura_col(4)%;
+}
+
+.row > .col-5 {
+  width: anchura_col(5)%;
+}
+
+.row > .col-6 {
+  width: anchura_col(6)%;
+}
+
+.row > .col-7 {
+  width: anchura_col(7)%;
+}
+
+.row > .col-8 {
+  width: anchura_col(8)%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+p-0 {
+  padding: 0rem;
+}
+
+p-1 {
+  padding: 0.5rem;
+}
+
+p-2 {
+  padding: 1rem;
+}
+
+p-3 {
+  padding: 1.5rem;
+}
+
+p-4 {
+  padding: 2rem;
+}/*# sourceMappingURL=ejercicio.css.map */

@@ -1,0 +1,24 @@
+.img picture img {
+    width: 50%;
+    height: 50%;
+}
+
+.img picture img:hover {
+    width: 50%;
+    height: 50%;
+    transform: scale(1.5);
+}
+
+
+@media screen and (max-width: 768px) {
+    .img picture img {
+        width: 50%;
+        height: 50%;
+    }
+    
+    .img picture img:hover {
+        width: 50%;
+        height: 50%;
+        transform: scale(1.5);
+    }
+}

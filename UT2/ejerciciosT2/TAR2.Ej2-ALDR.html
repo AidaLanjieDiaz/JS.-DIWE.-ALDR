@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UT2.Tarea 2 - Ejercicio 2</title>
+</head>
+
+<body>
+  <!--  Enunciados -->
+  <h3>
+    <p>
+      <b>
+        Ejercicio 2.- Crear un formulario para entrega de prácticas en una
+        asignatura: - Investiga cómo se puede comprobar el tipo de fichero
+      </b>
+    </p>
+
+  </h3>
+
+  <!-- Ejercicios -->
+  <p></p><!-- separar -->
+  <form action="https://www.google.com/" method="post">
+    <fieldset>
+      <legend>
+        <h1>Estado de la entrega</h1>
+      </legend>
+
+      <fieldset>
+        <legend>
+          <h2>Datos</h2>
+        </legend>
+        <p>
+          <label for="curso"><b>CURSO</b></label>
+            <input type="radio" name="curso"/> 1º SMR 
+            <input type="radio" name="curso"/> 2º SMR 
+            <input type="radio" name="curso"/> 1º DAW 
+            <input type="radio" name="curso"/> 2º DAW 
+            <input type="radio" name="curso"/> 1º DAM 
+            <input type="radio" name="curso"/> 2º DAM <br />
+        </p>
+
+        <p>
+          <label for="Categorias"><b>ASIGNATURA</b></label>
+          <select name="curso">
+            <option selected> </option>
+            <optgroup label="1º SMR">
+              <option>AOF</option>
+              <option>FOL</option>
+              <option>MME</option>
+              <option>RL</option>
+              <option>SOM</option>
+            </optgroup>
+            <optgroup label="2º SMR">
+              <option>SOR</option>
+              <option>SI</option>
+              <option>LC</option>
+              <option>SR</option>
+              <option>AW</option>
+              <option>EIE</option>
+            </optgroup>
+
+            <optgroup label="1º DAW">
+              <option>Prog</option>
+              <option>BD</option>
+              <option>LM</option>
+              <option>ED</option>
+              <option>SI</option>
+            </optgroup>
+            <optgroup label="2º DAW">
+              <option>DAWE</option>
+              <option>DIWE</option>
+              <option>DWEE</option>
+              <option>DWES</option>
+              <option>HLC</option>
+              <option>EIE</option>
+            </optgroup>
+
+            <optgroup label="1º DAM">
+              <option>Prog</option>
+              <option>BD</option>
+              <option>LM</option>
+              <option>ED</option>
+              <option>SI</option>
+            </optgroup>
+            <optgroup label="2º DAM">
+              <option>DI</option>
+              <option>AD</option>
+              <option>PMDM</option>
+              <option>SGE</option>
+              <option>PSP</option>
+              <option></option>
+            </optgroup>
+          </select>
+        </p>
+
+        <p>
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" required tabindex="1" />
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" name="apellidos" required tabindex="2" />
+        </p>
+        <p>
+          <label for="fecha">Fecha de Entrega:</label>
+          <input type="datetime-local" name="fecha" required tabindex="1" />
+        </p>
+
+      </fieldset>
+
+      <center>
+        <fieldset>
+          <legend>
+            <h2>Entrega</h2>
+          </legend>
+
+          <p>
+            <label for="enviar"></label>
+            <input type="file" name="enviar" accept=".pdf"/>
+          </p>
+        </fieldset>
+
+        <!-- Botón de enviar entrega dentro del "Estado de la entrega" pero 
+        metido en el center de entrega para no poner dos y que quede centrado -->
+        <p><button type="submit"><h3>Agregar Entrega</h3></button></p>
+      </center>
+
+    </fieldset>
+
+
+
+
+
+  </form>
+
+</body>
+
+</html>

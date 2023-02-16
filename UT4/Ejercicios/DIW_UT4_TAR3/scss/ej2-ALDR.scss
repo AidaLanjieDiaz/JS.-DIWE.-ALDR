@@ -1,0 +1,7 @@
+$tamaño-fuente: 1em, 2em, 4em;
+
+@for $i from 1 to 4 {
+    .container-#{$i} {
+      font-size: nth($tamaño-fuente, $i);
+    }
+  }

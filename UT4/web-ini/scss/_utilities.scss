@@ -1,0 +1,13 @@
+
+.text-center {
+    text-align: center;
+}
+
+$padding-origen: 0rem;
+
+@for $i from 0 to 5 {
+    p-#{$i} {
+      padding: $padding-origen;
+    }
+    $padding-origen: $padding-origen + 0.5;
+  }

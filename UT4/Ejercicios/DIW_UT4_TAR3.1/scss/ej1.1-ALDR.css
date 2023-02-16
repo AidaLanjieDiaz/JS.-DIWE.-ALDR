@@ -1,0 +1,10 @@
+.escalada {
+  -webkit-transfrom: scale(2, 3);
+  transform: scale(2, 3);
+}
+
+h1 {
+  color: blue;
+  -webkit-transfrom: rotate(22deg);
+  transform: rotate(22deg);
+}/*# sourceMappingURL=ej1.1-ALDR.css.map */

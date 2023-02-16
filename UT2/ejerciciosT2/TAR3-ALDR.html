@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UT2.Tarea 3 - CSS Selectores</title>
+
+    <link href="css/TAR3-ALDR.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <br>
+    <center>
+    <h1 id="titulo">Ejercicio práctico con Tablas</h1>
+        <table>
+
+            <tr>
+                <th id="vacio"> </th>
+                <th class="azul" colspan="3"> <img alt="" width="40" height="30" src="img/1.png"> </th>
+                <th class="azul" colspan="2"> <img alt="" width="50" height="30"src="img/2.png"> </th>
+            </tr>
+            <tr>
+                <th class="rojo">Capacidad</th>
+                <td class="gris">2GB</td>
+                <td class="gris">4GB</td>
+                <td class="gris">8GB</td>
+                <td class="gris">32GB</td>
+                <td class="gris">2GB</td>
+            </tr>
+
+            <tr>
+                <th class="rojo">Colores</th>
+                <th>Blanco</th>
+                <td>
+                    <ul type="disc">
+                        <li>Negro</li>
+                        <li>Rosa</li>
+                        <li>Dorado</li>
+                    </ul>
+                </td>
+                <th>Negro</th>
+                <td class="azul" colspan="2">
+                    <ul type="disc">
+                        <li>Negro</li>
+                        <li>Blanco</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <th id="pantalla" class="rojo">Pantalla</th>
+                <th class="azul" colspan="3">3 Pulgadas</th>
+                <th class="azul" colspan="2">7 Pulgadas</th>
+            </tr>
+
+            <tr>
+                <th id="tdc" rowspan="2" class="rojo">Tiempo de Carga</th>
+                <th class="azul" colspan="3" rowspan="2">1 hora</th>
+                <th id="especial" colspan="2">5 horas</th>
+
+            </tr>
+            <tr>
+                <th class="azul" colspan="2">30 minutos para 75%</th>
+            </tr>
+
+
+
+        </table>
+    </center>
+</body>
+
+</html>

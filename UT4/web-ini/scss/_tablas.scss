@@ -1,0 +1,22 @@
+//Estilos genreales para la tabla
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    border: 1px solid black;
+    padding: 1rem;
+  }
+
+@import "funciones";
+
+$num: 1;
+@while $num < 10 {
+
+    td:nth-of-type(#{$num}) {
+      background-color: columna-color(#{$num});
+    }
+  
+}

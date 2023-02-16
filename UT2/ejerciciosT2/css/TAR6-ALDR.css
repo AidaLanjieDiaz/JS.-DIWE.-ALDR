@@ -1,0 +1,128 @@
+body {
+background-color: rgb(216, 214, 214);
+position: relative;
+height: 100px;
+}
+
+.general, .menu-izq {
+    display: inline-block;
+    margin: 100px auto;
+}
+
+.general {
+    margin: 70px auto;
+    padding: 10px 10px 10px 10px;
+    height: 700px;
+    width: 80%;
+    position: relative;
+    top: 50px;
+    bottom: 3px;
+    left: 8%;
+}
+
+.menu {
+    background-color: rgb(89, 88, 88);
+    color: white;
+    height: 10%;
+    width: 102%;
+    top: 0px;
+    position: sticky;
+    z-index: 5;
+}
+
+.verde {
+    background-color: rgb(126, 237, 126);
+    border-radius: 10px;
+    margin: 100px auto;
+    height: 600px;
+    width: 80%;
+    position: relative;
+}
+
+.menu div{
+    display: inline-block;
+    width: 10%;
+    margin: 20px 80px 20px 20px;
+}
+
+.menu-izq {
+   top: 60px;
+   padding-bottom: 5%;
+   border-top-right-radius: 10%;
+   border-bottom-right-radius: 10%;
+   position: fixed;
+   height: 40%;
+    width: 80px;
+    border: 2px solid black;
+    text-align: center; 
+    position: fixed;
+    font-size: 0.8em;
+}
+
+.menu-izq img {
+    width: 90%;
+    height: 80px;
+    margin: 10px auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+.verde div {
+    background-color: white;
+    color: black;
+    
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5%;
+    text-align: center; 
+    position: fixed;
+    font-size: 0.8em;
+}
+
+.verde div img {
+    margin: 10px auto;
+    width: 80%;
+    height: 80px;    
+}
+
+.verde div:first-of-type {
+    left: 300px;
+    z-index: 4;
+    margin: 20px auto;
+    transform: rotate(300deg);
+    position: absolute;
+     
+}
+
+.verde div:nth-of-type(2) {
+    left: 400px;
+    z-index: 3;
+    margin: 30px auto;
+    transform: rotate(60deg);
+    position: absolute;
+}
+
+.verde div:nth-of-type(3) {
+    left: 500px;
+    z-index: 2;
+    margin: 40px auto;
+    transform: rotate(340deg);
+    position: absolute;
+}
+
+.verde div:last-of-type {
+    left: 600px;
+    z-index: 1;
+    margin: 50px auto;
+    transform: rotate(20deg);    
+    position: absolute; 
+}
+
+
+
+.verde div p {
+    margin: 0px auto;
+}
+
