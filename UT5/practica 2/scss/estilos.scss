@@ -1,0 +1,22 @@
+$primary: rgb(5, 176, 255);
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+$font-family-base: 'Dancing Script';
+$body-bg: rgb(198, 195, 195);
+
+.navbar {
+    background-color: rgb(132, 224, 247);
+}
+
+.card {
+    --bs-card-bg: white;
+}
+@import "../bootstrap/scss/bootstrap.scss";
+
+.valido {
+    color: rgb(0, 255, 0);
+}
+
+.invalido {
+    color: red;
+}
