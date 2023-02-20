@@ -17,7 +17,7 @@ style="position: relative;"
     data-bs-target="#navbar-example3"
     data-bs-offset="10"
     tabindex="0">
-    <nav id="navbar-example3" class="navbar navbar-expand-lg fixed-top">
+    <nav id="navbar-example3" class="navbar navbar-expand-lg navbar-info bg-info fixed-top">
         <div class="container">
           <a href="index.html" class="navbar-brand">
             <i class="bi bi-pencil-square"></i>
@@ -153,33 +153,32 @@ style="position: relative;"
 
     <!-- card con imagenes que al darle llevan a la información del acordeon -->
     <div class="row text-dark text-center">
-
         <div class="col-12 col-md-4 mb-5">
-            <div class="card" style="width: 25rem;">
+            <div class="card">
                 <img src="img/img1-carrusel.jpg" alt="" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Tradicional</h5>
-                    <a href="#tradicional" class="btn btn-primary">Más información</a>
+                    <a href="#tradicional" class="btn btn-primary col-12 col-md-4 mb-5">Más información</a>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-4 mb-5">
-            <div class="card" style="width: 25rem;">
+            <div class="card">
                 <img src="img/img2-carrusel.jpg" alt="" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Digital</h5>
-                    <a href="#digital" class="btn btn-primary">Más información</a>
+                    <a href="#digital" class="btn btn-primary col-12 col-md-4 mb-5">Más información</a>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-4 mb-5">
-            <div class="card" style="width: 25rem;">
+            <div class="card">
                 <img src="img/img3-carrusel.jpg" alt="" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Ceras</h5>
-                    <a href="#ceras" class="btn btn-primary">Más información</a>
+                    <a href="#ceras" class="btn btn-primary col-12 col-md-4 mb-5">Más información</a>
                 </div>
             </div>
         </div>
@@ -188,31 +187,31 @@ style="position: relative;"
     <div class="row text-dark text-center">
 
         <div class="col-12 col-md-4 mb-5">
-            <div class="card" style="width: 25rem;">
+            <div class="card">
                 <img src="img/img4-carrusel.jpg" alt="" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Lapices de colores</h5>
-                    <a href="#lapicesColor" class="btn btn-primary">Más información</a>
+                    <a href="#lapicesColor" class="btn btn-primary col-12 col-md-4 mb-5">Más información</a>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-4 mb-5">
-            <div class="card" style="width: 25rem;">
+            <div class="card">
                 <img src="img/img5-carrusel.jpg" alt="" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Retuladores</h5>
-                    <a href="#retuladores" class="btn btn-primary">Más información</a>
+                    <a href="#retuladores" class="btn btn-primary col-12 col-md-4 mb-5">Más información</a>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-4 mb-5">
-            <div class="card" style="width: 25rem;">
+            <div class="card">
                 <img src="img/img6-carrusel.jpg" alt="" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Acuarelas</h5>
-                    <a href="#acuarelas" class="btn btn-primary">Más información</a>
+                    <a href="#acuarelas" class="btn btn-primary col-12 col-md-4 mb-5">Más información</a>
                 </div>
             </div>
         </div>
@@ -220,8 +219,16 @@ style="position: relative;"
     </div>
 
     <!-- acordeon -->
-    <div class="row">
-        <div class="col-12 col-md-6 col-lg-8 col-xl-9">
+    <section id="Definiciones" class="bg-light">
+      <div class="container">
+        <div class="text-center py-5 h1">
+          <i class="bi bi-book-half"></i>
+          <i class="bi bi-book-half"></i>
+          <i class="bi bi-book-half"></i>
+        </div>
+        <h2 class="text-center mb-5 display-4">Definiciones</h2>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-8 col-xl-12">
           <div class="accordion" id="accordionExample">
 
             <div class="accordion-item">
@@ -245,15 +252,9 @@ style="position: relative;"
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the
-                  showing and hiding via CSS transitions. You can modify any
-                  of this with custom CSS or overriding our default variables.
-                  It's also worth noting that just about any HTML can go
-                  within the <code>.accordion-body</code>, though the
-                  transition does limit overflow.
+                  <strong>El dibujo tradicional,</strong> consiste en dibujar a mano
+                   <code>con lápiz y papel,</code> o cualquier utensilio tradicional,
+                   como lo es las ceras, lapices de colores, pinceles y etc..
                 </div>
               </div>
             </div>
@@ -279,15 +280,11 @@ style="position: relative;"
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong>
-                  It is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the
-                  showing and hiding via CSS transitions. You can modify any
-                  of this with custom CSS or overriding our default variables.
-                  It's also worth noting that just about any HTML can go
-                  within the <code>.accordion-body</code>, though the
-                  transition does limit overflow.
+                  El <strong>dibujo digital</strong> se refiere a la creación 
+                  de dibujos a través de <code>un programa de dibujo digital.</code> 
+                  En lugar de usar lápiz y papel, los artistas digitales 
+                  dibujan sobre una tableta o una computadora mediante 
+                  otro dispositivo, como un mouse o un lápiz óptico.
                 </div>
               </div>
             </div>
@@ -431,6 +428,8 @@ style="position: relative;"
           </div>
         </div>
       </div>
+    </section>
+
 
 
 <script
