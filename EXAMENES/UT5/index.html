@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen UT5</title>
+    <link rel="stylesheet" href="scss/estilos.css" />
+  </head>
+  <body
+    style="position: relative"
+    data-bs-spy="scroll"
+    data-bs-target="#navbar-example3"
+    data-bs-offset="10"
+    tabindex="0"
+  >
+    <div class="container">Contactanos (+34)987654321</div>
+
+    <nav
+      id="navbar-example3"
+      class="navbar navbar-expand-lg navbar-info bg-info fixed-top"
+    >
+      <div class="container">
+        <a href="#inicio" class="navbar-brand">
+          <span class="align-middle">Diseño IESMM</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">
+                Equipo
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Contactos </a>
+            </li>
+          </ul>
+
+          <!-- el suscribete -->
+          <ul class="navbar-nav ms-auto mb-4 mb-lg-0">
+            <p>
+                <input type="email" name="email" id="correo" placeholder="Correo Electronico">
+            </p>
+            <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Suscríbete
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Suscripción</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Gracias por suscribirte a nuestro Newletter
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+          </ul>
+       
+
+        </div>
+        <!-- fin del menu -->
+
+      </div>
+    </nav>
+
+    <!-- carrusel -->
+    <section id="inicio">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="1"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="2"
+          ></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide1.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide3.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="" class="container">
+      <h3>
+        Una empresa única para todas tus necesidades de
+        <span>Marketing Digital</span>
+      </h3>
+      <p>
+        <span>Diseño IESMM</span> es la agencia donde te ayudamos establecer tu presencia
+        online. SEO, paginas WEB, tiendas virtuales, redes sociales
+      </p>
+    </section>
+
+    <!-- cuatro cajas -->
+    <section class="container">
+      <div class="row">
+        <div class="col-5 col-md-4 col-lg-3 col-xl-2 mb-5 mb-md-4">
+            <img src="img/desarrollo.png" alt="" class="img-fluid rounded" />
+        </div>
+        
+        <div class="col-4 col-md-6 col-lg-8 col-xl-4">
+          <h6>Desarrollo</h6>
+          <p>Desarrollo de aplicaciones WEB, moviles y ecommerce</p>
+        </div>
+        
+        <div class="col-5 col-md-4 col-lg-3 col-xl-2 mb-5 mb-md-4">
+            <img src="img/concepto.png" alt="" class="img-fluid rounded" />
+        </div>
+        <div class="col-4 col-md-6 col-lg-8 col-xl-4">
+            <h6>Branding</h6>
+            <p>Diseño, Conceptualización e Implementación de productos digitales</p>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-5 col-md-4 col-lg-3 col-xl-2 mb-5 mb-md-4">
+            <img src="img/comunicaciones.png" alt="" class="img-fluid rounded" />
+        </div>
+        <div class="col-4 col-md-6 col-lg-8 col-xl-4">
+          <h6>Comunicaciones</h6>
+          <p>Desarrollo  del plan de comunicaciones para sus clientes.</p>
+        </div>
+
+        <div class="col-5 col-md-4 col-lg-3 col-xl-2 mb-5 mb-md-4">
+            <img src="img/seo.png" alt="" class="img-fluid rounded" />
+        </div>
+        <div class="col-4 col-md-6 col-lg-8 col-xl-4">
+            <h6>SEO</h6>
+            <p>Analizamos la eficiencia y optimizamos los sitios WEB</p>
+          </div>
+      </div>
+
+    </section>
+
+   <!--  muchas fotos -->
+    <section class="container">
+        <h3>Equipo pequeño con <span>resultados Grandes</span> </h3>
+        <p>Siempre buscamos las personas adecuadas para que trabajen con nosotros. Si te sientes listo para este reto, te esperamos para que te unas a nosotros.</p>
+    
+    </section>
+
+    <!-- mapa -->
+    <section class="container ">
+        <div class="row">
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-5 mb-md-0">
+                <h3>Ubicado en Sevilla, Mi arma <span id="typewriter"> </span> </h3>
+                <p>Elijimos Sevilla para nuestra oficina con el objetivo de estar cerca de nuestros clientes. ¡Visítenos y no se arrepentirá!</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-8 col-xl-6">
+                <img src="img/mapa.PNG" alt="" class="img-fluid rounded" />
+            </div>
+
+        </div>
+        
+    </section>
+
+    <!-- formulario -->
+    <section class="container">
+        <div class="card m-lg-auto" style="width: 18rem;">
+            <img src="img/support.png" alt="" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Contáctanos</h5>
+                <p class="card-text">Estamos aqui para hacer realidad de tus proyectos</p>
+                <form class="formulario" action="https://formsubmit.co/adiarub160@iesmartinezm.es" method="POST">
+                    <p>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre Apellido" required>
+                    </p>
+                    <p>
+                        <input type="email" name="email" id="correo" placeholder="correo@ejemplo.com" required>
+                    </p>
+                    
+                    <p class="block">
+                       <textarea name="message" rows="3" id="mensaje" required></textarea>
+                    </p>
+                    
+                    <p class="block">
+                        <button class="btn btn-primary">
+                            Enviar Mensaje
+                        </button>
+                    </p>
+                    
+                </form>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="js/formulario.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>

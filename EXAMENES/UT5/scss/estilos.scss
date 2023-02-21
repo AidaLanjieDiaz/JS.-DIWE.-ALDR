@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+$font-family-base: 'Open Sans Codensed';
+
+$primary: rgb(0, 106, 255);
+
+$info: white;
+
+@import "../bootstrap/scss/bootstrap.scss";
+
+span {
+    color: $primary;
+}
+
+.valido {
+    color: rgb(2, 159, 2);
+}
+
+.invalido {
+    color: red;
+}
